@@ -1,6 +1,8 @@
 package com.platformer.model;
 
 import java.awt.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 /**
@@ -17,6 +19,7 @@ public class Model {
     private int objectX;
     private int objectY;
     private int blockSide;
+    private List<IDrawable> drawables;
 
     /**
      * Constructor.
@@ -24,13 +27,29 @@ public class Model {
      * @param objectX The amount of objects (square objects) that will be able to fit in the X direction.
      * @param objectY The amount of objects (square objects) that will be able to fit in the Y direction.
      */
-    public Model(int objectX, int objectY, int sharpness) {
+    public Model(int objectX, int objectY, int sharpness, int blockSide) {
         this.sharpness = sharpness;
         this.objectX = objectX;
         this.objectY = objectY;
         x = objectX * sharpness;
         y = objectY * sharpness;
+        this.blockSide = blockSide;
         worldGenerator();
+        initDrawableList();
+    }
+
+    private void initDrawableList() {
+        drawables = new ArrayList<>();
+        fillListFromArray(world);
+    }
+
+    private void fillListFromArray(Block[][] world) {
+        for(int r = 0; r < objectX; r++){
+            for (int c = 0; c < objectY; c++){
+                drawables.add(world[r][c]);
+            }
+        }
+
     }
 
     void worldGenerator(){
@@ -80,5 +99,17 @@ public class Model {
         for(int i = 1; i < world[1].length - 1; i++){
             world[1][i] = null;
         }
+    }
+
+    public int getWidth() {
+        return y;
+    }
+
+    public int getHeight() {
+        return x;
+    }
+
+    public List<IDrawable> getDrawables(){
+        return drawables;
     }
 }

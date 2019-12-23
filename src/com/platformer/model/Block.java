@@ -9,9 +9,24 @@ public class Block implements IDrawable {
     private final int side;
     private BufferedImage icon;
 
-    public Block(int side, BufferedImage icon) {
+    public Block(int side) {
         this.side = side;
-        this.icon = icon;
+        icon = new BufferedImage(side, side, BufferedImage.TYPE_INT_RGB);
+        filIcon();
+    }
+
+    private void filIcon() {
+        int x;
+        int y;
+        for(int i = 0; i < side*side; i++) {
+            x = i % side;
+            y = i / side;
+            if(y <= 3 || x <= 3) {
+                icon.setRGB(x, y, 0xffffff);
+            }else{
+                icon.setRGB(x, y, 0x696969);
+            }
+        }
     }
 
     @Override

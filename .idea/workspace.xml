@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48e822a3-6ad4-499a-afb9-110972a20779" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/platformer/model/BlockFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/platformer/model/IGameObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/platformer/view/DrawPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/platformer/view/ViewFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/platformer/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/platformer/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/platformer/model/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/platformer/model/Block.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/platformer/model/IDrawable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/platformer/model/IDrawable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/platformer/model/BlockFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/platformer/model/BlockFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/platformer/model/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/platformer/model/Model.java" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -34,7 +36,19 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../SchoolProjects/TDA552/Labb/Labb-1" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -47,18 +61,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
+    <recent_temporary>
       <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
+        <item itemvalue="Application.Main" />
       </list>
-    </option>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />

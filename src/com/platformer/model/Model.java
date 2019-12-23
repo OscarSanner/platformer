@@ -1,6 +1,9 @@
 package com.platformer.model;
 
+import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -20,6 +23,8 @@ public class Model {
     private int objectY;
     private int blockSide;
     private List<IDrawable> drawables;
+    public Timer timer;
+    private final int delay;
 
     /**
      * Constructor.
@@ -31,11 +36,13 @@ public class Model {
         this.sharpness = sharpness;
         this.objectX = objectX;
         this.objectY = objectY;
-        x = objectX * sharpness;
-        y = objectY * sharpness;
         this.blockSide = blockSide;
         worldGenerator();
+        x = objectX * sharpness * world[1].length;
+        y = objectY * sharpness * world.length;
         initDrawableList();
+        delay = 10;
+        timer = new Timer(delay, new TimerListener());
     }
 
     private void initDrawableList() {
@@ -46,7 +53,9 @@ public class Model {
     private void fillListFromArray(Block[][] world) {
         for(int r = 0; r < objectX; r++){
             for (int c = 0; c < objectY; c++){
-                drawables.add(world[r][c]);
+                if(world[r][c] != null){
+                    drawables.add(world[r][c]);
+                }
             }
         }
 
@@ -99,6 +108,12 @@ public class Model {
         for(int i = 1; i < world[1].length - 1; i++){
             world[1][i] = null;
         }
+        for(int i = 1; i < world[1].length - 1; i++){
+            world[world.length - 2][i] = null;
+        }
+        for(int i = 1; i < world.length - 1; i++){
+            world[i][world[0].length - 2] = null;
+        }
     }
 
     public int getWidth() {
@@ -111,5 +126,16 @@ public class Model {
 
     public List<IDrawable> getDrawables(){
         return drawables;
+    }
+
+    private class TimerListener implements ActionListener {
+        public void actionPerformed(ActionEvent e) {
+            update();
+            // repaint() calls the paintComponent method of the panel
+        }
+    }
+
+    private void update() {
+
     }
 }

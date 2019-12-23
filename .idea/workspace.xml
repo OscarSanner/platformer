@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48e822a3-6ad4-499a-afb9-110972a20779" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/platformer/view/DrawPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/platformer/view/ViewFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/platformer/model/Direction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/platformer/com/platformer/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/platformer/com/platformer/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/platformer/com/platformer/model/Model.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/platformer/com/platformer/model/Model.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/platformer/com/platformer/view/ViewFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/platformer/com/platformer/view/ViewFrame.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/platformer/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/platformer/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/platformer/model/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/platformer/model/Block.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/platformer/model/BlockFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/platformer/model/BlockFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/platformer/model/AbstractPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/platformer/model/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/platformer/model/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/platformer/model/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/platformer/view/ViewFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/platformer/view/ViewFrame.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +23,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -98,5 +101,21 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="446" y="54" key="#com.intellij.ide.util.MemberChooser/0.0.1280.689@0.0.1280.689" timestamp="1577058777999" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/platformer/view/DrawPanel.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/platformer/model/Model.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

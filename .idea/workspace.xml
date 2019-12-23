@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48e822a3-6ad4-499a-afb9-110972a20779" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/platformer/model/Block.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/platformer/model/AbstractPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/platformer/model/AbstractPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/platformer/model/BlockFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/platformer/model/IGameObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/platformer/model/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/platformer/model/Block.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/platformer/model/IDrawable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/platformer/model/IDrawable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/platformer/model/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/platformer/model/Model.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -25,17 +27,14 @@
   </component>
   <component name="ProjectId" id="1VIDaDuUz1M577eCV8bfWGSzWAv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -48,6 +47,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -67,10 +78,18 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="446" y="54" key="#com.intellij.ide.util.MemberChooser" timestamp="1577058777999">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="446" y="54" key="#com.intellij.ide.util.MemberChooser/0.0.1280.689@0.0.1280.689" timestamp="1577058777999" />
   </component>
 </project>

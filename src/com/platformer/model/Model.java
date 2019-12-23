@@ -1,5 +1,8 @@
 package com.platformer.model;
 
+import java.awt.*;
+import java.util.Random;
+
 /**
  * Note: All object has same size and width. Has to be scaleable with world size
  */
@@ -10,9 +13,10 @@ public class Model {
     private final int x;
     private final int y;
     private int sharpness;
-    private IDrawable[][] world;
+    private Block[][] world;
     private int objectX;
     private int objectY;
+    private int blockSide;
 
     /**
      * Constructor.
@@ -26,11 +30,30 @@ public class Model {
         this.objectY = objectY;
         x = objectX * sharpness;
         y = objectY * sharpness;
+        worldGenerator();
     }
 
     void worldGenerator(){
-        world = new IDrawable[objectX][objectY];
-        fillPath(world);
+        world = new Block[objectX][objectY];
+        filWorld(world);
+        makePath(world);
+    }
+
+    private void filWorld(Block[][] world) {
+        int xCoord = blockSide/2;
+        int yCoord = blockSide/2;
+        for(int r = 0; r < objectX; r++){
+            if (r!=0) {
+                yCoord += blockSide;
+                xCoord = blockSide/2;
+            }
+            for (int c = 0; c < objectY; c++){
+                world[r][c] = BlockFactory.standard(blockSide);
+                world[r][c].setX(xCoord);
+                world[r][c].setY(yCoord);
+                xCoord += blockSide;
+            }
+        }
     }
 
     /**
@@ -44,7 +67,18 @@ public class Model {
      * 3. If deleting the next block will lead back to beginning, redo random.
      * 4. After a set path has been created: be done.
      * @param world The whole world.
+     *
+     * For now makes a set path
      */
-    private void fillPath(IDrawable[][] world) {
+    private void makePath(IDrawable[][] world) {
+        if(world.length < 5 || world[0].length < 5){
+            return;
+        }
+        for(int i = 1; i < world.length - 1; i++){
+            world[i][1] = null;
+        }
+        for(int i = 1; i < world[1].length - 1; i++){
+            world[1][i] = null;
+        }
     }
 }
